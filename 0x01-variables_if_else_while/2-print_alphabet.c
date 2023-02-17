@@ -1,20 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: 'prints alph in upper and lower case'
+ * main - Prints the alphabet
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (c = 'a'; c <= 'z'; ++c)
+	for (i = 0; i < 26; i++)
 	{
-	putchar(c);
-	}
-	for (c = 'A'; c <= 'Z'; ++c)
-	{
-	putchar(c);
+		putchar(alp[i]);
 	}
 	putchar('\n');
 	return (0);
